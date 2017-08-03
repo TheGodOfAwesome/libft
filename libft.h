@@ -6,7 +6,7 @@
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/10 10:53:29 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/03 13:32:53 by kmuvezwa         ###   ########.fr       */
+/*   Updated: 2017/08/03 14:58:27 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memccpy(void *restrict dst, void *restrict src, int c, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t len);
+void	*ft_memalloc(size_t size);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_strlen(char *str);
 char	*ft_strdup(const char *s1);
