@@ -6,18 +6,18 @@
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/06/11 11:05:45 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/06/20 03:50:09 by kmuvezwa         ###   ########.fr       */
+/*   Updated: 2017/08/03 14:26:08 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_atoi(char *str)
 {
-	int i;
-	int sign;
-	int num;
+	long int		i;
+	long int		sign;
+	long int		num;
 
 	i = 0;
-	num = 0;
+	num = 0;		
 	sign = 1;
 	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\v' ||
 		str[i] == '\n' || str[i] == '\f' || str[i] == '\r')
