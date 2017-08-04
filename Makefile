@@ -6,7 +6,7 @@
 #    By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/05/10 10:32:31 by kmuvezwa          #+#    #+#              #
-#    Updated: 2017/08/03 17:06:18 by kmuvezwa         ###   ########.fr        #
+#    Updated: 2017/08/04 10:51:45 by kmuvezwa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,11 +42,13 @@ CFILES = ft_memset.c\
 		 ft_toupper.c\
 		 ft_tolower.c\
 		 ft_putchar.c\
+		 ft_putnbr.c\
 		 ft_putstr.c\
 		 ft_putendl.c\
 		 ft_memalloc.c\
 		 ft_strnew.c\
 		 ft_strjoin.c\
+		 ft_itoa.c\
 		 ft_atoi.c
 
 OBJS = ft_memset.o\
@@ -77,11 +79,13 @@ OBJS = ft_memset.o\
 	  ft_toupper.o\
 	  ft_tolower.o\
 	  ft_putchar.o\
+	  ft_putnbr.o\
 	  ft_putstr.o\
 	  ft_putendl.o\
 	  ft_memalloc.o\
 	  ft_strnew.o\
 	  ft_strjoin.o\
+	  ft_itoa.o\
 	  ft_atoi.o
 
 all : $(NAME)
