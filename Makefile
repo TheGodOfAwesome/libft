@@ -6,7 +6,7 @@
 #    By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/05/10 10:32:31 by kmuvezwa          #+#    #+#              #
-#    Updated: 2017/08/04 16:18:25 by kmuvezwa         ###   ########.fr        #
+#    Updated: 2017/08/04 16:36:38 by kmuvezwa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,8 +48,10 @@ CFILES = ft_memset.c\
 		 ft_putchar_fd.c\
 		 ft_putstr_fd.c\
 		 ft_putendl_fd.c\
+		 ft_putnbr_fd.c\
 		 ft_memalloc.c\
 		 ft_strnew.c\
+		 ft_strsub.c\
 		 ft_strjoin.c\
 		 ft_itoa.c\
 		 ft_atoi.c
@@ -88,8 +90,10 @@ OBJS = ft_memset.o\
 	  ft_putchar_fd.o\
 	  ft_putstr_fd.o\
 	  ft_putendl_fd.o\
+	  ft_putnbr_fd.o\
 	  ft_memalloc.o\
 	  ft_strnew.o\
+	  ft_strsub.o\
 	  ft_strjoin.o\
 	  ft_itoa.o\
 	  ft_atoi.o
