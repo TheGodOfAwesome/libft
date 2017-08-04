@@ -6,7 +6,7 @@
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/10 10:53:29 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/04 16:05:35 by kmuvezwa         ###   ########.fr       */
+/*   Updated: 2017/08/04 16:21:52 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ void	ft_putstr(char const *s);
 void	ft_putendl(char const *s);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char const *s, int fd);
+void	ft_putendl_fd(char const *s, int fd);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strnew(size_t size);
 int		ft_atoi(const char *str);
