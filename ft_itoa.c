@@ -6,19 +6,19 @@
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/04 10:40:31 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/04 10:48:05 by kmuvezwa         ###   ########.fr       */
+/*   Updated: 2017/08/07 12:54:02 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_itoa(int nbr)
 {
 	static char	rep[] = "0123456789ABCDEF";
-	static char buff[100];
+	static char buff[65];
 	char		*ptr;
 	long long	num;
 	int			base;
 
-	ptr = &buff[99];
+	ptr = &buff[64];
 	base = 10;
 	if (base < 2 || base > 16)
 		return (0);
