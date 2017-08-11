@@ -6,13 +6,13 @@
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/04/07 17:25:53 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/11 17:01:43 by kmuvezwa         ###   ########.fr       */
+/*   Updated: 2017/08/11 17:57:25 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_copy_str(char const *s, char c, size_t size_array,
+static int		ft_copy_str(char const *s, char c, size_t size_array,
 				char **ret)
 {
 	size_t	i;
@@ -37,7 +37,7 @@ int		ft_copy_str(char const *s, char c, size_t size_array,
 	return (0);
 }
 
-size_t	ft_get_size_array(char const *s, char c)
+static size_t	ft_get_size_array(char const *s, char c)
 {
 	size_t		size_array;
 	char const	*temp_s;
@@ -53,7 +53,7 @@ size_t	ft_get_size_array(char const *s, char c)
 	return (size_array);
 }
 
-char	**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	char		**ret;
 	size_t		size_array;
@@ -66,6 +66,5 @@ char	**ft_strsplit(char const *s, char c)
 		return (NULL);
 	if (ft_copy_str(s, c, size_array, ret))
 		return (NULL);
-	//*(ret + size_array) = '\0';
 	return (ret);
 }

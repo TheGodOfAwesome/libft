@@ -6,7 +6,7 @@
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/04 10:40:31 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/11 16:44:28 by kmuvezwa         ###   ########.fr       */
+/*   Updated: 2017/08/11 18:04:37 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,10 @@ char	*ft_itoa(int nbr)
 	if (num < 0)
 		num *= -1;
 	if (num == 0)
+	{
 		*(--ptr) = rep[num % base];
+		return (ptr);
+	}
 	while (num != 0)
 	{
 		*--ptr = rep[num % base];

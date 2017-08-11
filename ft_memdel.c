@@ -6,7 +6,7 @@
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/07 13:48:49 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/07 14:26:06 by kmuvezwa         ###   ########.fr       */
+/*   Updated: 2017/08/11 17:52:14 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,11 @@
 
 void	ft_memdel(void **ap)
 {
+	void	**temp;
+
+	temp = ap;
 	if (!ap || !*ap)
 		return ;
-	free (*ap);
-	ap = NULL;
+	free (temp);
+	temp = NULL;
 }
