@@ -6,7 +6,7 @@
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/04 10:40:31 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/07 12:54:02 by kmuvezwa         ###   ########.fr       */
+/*   Updated: 2017/08/11 16:44:28 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ char	*ft_itoa(int nbr)
 	int			base;
 
 	ptr = &buff[64];
+	*ptr = '\0';
 	base = 10;
 	if (base < 2 || base > 16)
 		return (0);
-	*ptr = '\0';
 	num = nbr;
 	if (num < 0)
 		num *= -1;
