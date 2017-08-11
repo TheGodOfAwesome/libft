@@ -5,29 +5,39 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/07 14:26:28 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/07 16:28:05 by kmuvezwa         ###   ########.fr       */
+/*   Created: 2016/04/07 17:25:53 by kmuvezwa          #+#    #+#             */
+/*   Updated: 2016/04/07 17:29:07 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+
 char	*ft_strtrim(char const *s)
 {
-	char	*temp;
-	int		i;
+	char		*result;
+	char const	*end;
+	char const	*start;
 
-	i = 0;
-	if (s)
+	start = NULL;
+	if (s == NULL)
+		return (NULL);
+	while (*s)
 	{
-		temp = (char *)malloc(sizeof(char *) * ft_strlen((char *)s));	
-		while (s[i] != '\0')
+		if (!(*s == ' ' || *s == '\n' || *s == '\t'))
 		{
-			if (s[i] != ' ' || s[i] != '\t' || s[i] != '\n')
-				temp[i] = s[i];
-			i++;
+			start = (start == NULL) ? s : start;
+			end = s;
 		}
+		s++;
 	}
-	temp[i] = '\0';
-	return (temp);
+	if (start == NULL)
+		return (ft_strnew(0));
+	if ((result = (char *)malloc(sizeof(char) * (end - start + 2))) == NULL)
+		return (NULL);
+	s = start;
+	while (s <= end)
+		*result++ = *s++;
+	*result = '\0';
+	return (result - (end - start + 1));
 }
