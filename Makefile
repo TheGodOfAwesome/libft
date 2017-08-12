@@ -6,7 +6,7 @@
 #    By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/05/10 10:32:31 by kmuvezwa          #+#    #+#              #
-#    Updated: 2017/08/11 16:49:15 by kmuvezwa         ###   ########.fr        #
+#    Updated: 2017/08/12 15:15:07 by kmuvezwa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,7 @@ CFILES = ft_memset.c\
 		 ft_strnstr.c\
 		 ft_strcmp.c\
 		 ft_strncmp.c\
+		 ft_strdel.c\
 		 ft_isalpha.c\
 		 ft_isdigit.c\
 		 ft_isalnum.c\
@@ -86,6 +87,7 @@ OBJS = ft_memset.o\
 	  ft_strnstr.o\
 	  ft_strcmp.o\
 	  ft_strncmp.o\
+	  ft_strdel.o\
 	  ft_isalpha.o\
 	  ft_isdigit.o\
 	  ft_isalnum.o\
