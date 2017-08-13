@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/12 15:44:40 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/12 15:45:08 by kmuvezwa         ###   ########.fr       */
+/*   Created: 2017/08/13 15:19:46 by kmuvezwa          #+#    #+#             */
+/*   Updated: 2017/08/13 15:25:57 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		count_words(char const *s, char *c)
+static int	count_words(char const *s, char *c)
 {
 	int		i;
 	int		j;
@@ -41,7 +41,7 @@ static int		count_words(char const *s, char *c)
 	return (word);
 }
 
-static int		word_len(char const *s, char c)
+static int	word_len(char const *s, char c)
 {
 	int		letter;
 	int		i;
@@ -56,7 +56,7 @@ static int		word_len(char const *s, char c)
 	return (letter);
 }
 
-char			**ft_strsplit(char const *s, char c)
+char		**ft_strsplit(char const *s, char c)
 {
 	char	**str;
 	int		words;
@@ -65,7 +65,6 @@ char			**ft_strsplit(char const *s, char c)
 
 	i = 0;
 	ch[0] = c;
-
 	if (s == NULL)
 		return (NULL);
 	words = count_words(s, ch);

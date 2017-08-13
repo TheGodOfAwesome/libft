@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/04/07 17:25:53 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2016/04/07 17:29:07 by kmuvezwa         ###   ########.fr       */
+/*   Created: 2017/08/13 15:30:44 by kmuvezwa          #+#    #+#             */
+/*   Updated: 2017/08/13 15:33:27 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 char	*ft_strtrim(char const *s)
 {

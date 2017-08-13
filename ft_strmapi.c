@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/04/07 17:25:53 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/11 16:15:32 by kmuvezwa         ###   ########.fr       */
+/*   Created: 2017/08/13 18:19:52 by kmuvezwa          #+#    #+#             */
+/*   Updated: 2017/08/13 18:21:33 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		i = 0;
 		while (s[i])
 		{
-			str[i] = f((unsigned int)i,s[i]);
+			str[i] = f((unsigned int)i, s[i]);
 			i++;
 		}
 		str[i] = '\0';
