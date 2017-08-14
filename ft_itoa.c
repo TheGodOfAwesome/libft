@@ -6,11 +6,26 @@
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/04 10:40:31 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/14 14:57:39 by kmuvezwa         ###   ########.fr       */
+/*   Updated: 2017/08/14 18:40:39 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	ft_count_int_len(int num, int base)
+{
+	int		i;
+
+	i = 0;
+	if (num < 0)
+		i++;
+	while(num != 0)
+	{
+		num = num / base;
+		i++;
+	}
+	return (i);
+}
 
 static char	*ft_itoa_base(int nbr, int base)
 {
@@ -18,7 +33,7 @@ static char	*ft_itoa_base(int nbr, int base)
 	char		*ptr;
 	long long	num;
 
-	ptr = (char *)malloc(sizeof(char) * 65);
+	ptr = (char *)malloc(sizeof(char) * ft_count_int_len(nbr, base) + 1);
 	if (!ptr)
 		return (NULL);
 	ptr = &ptr[64];
