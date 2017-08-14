@@ -6,7 +6,7 @@
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/04 10:40:31 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/12 15:59:42 by kmuvezwa         ###   ########.fr       */
+/*   Updated: 2017/08/14 14:57:39 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,13 @@
 static char	*ft_itoa_base(int nbr, int base)
 {
 	static char	rep[] = "0123456789ABCDEF";
-	static char buff[65];
 	char		*ptr;
 	long long	num;
 
-	ptr = &buff[64];
+	ptr = (char *)malloc(sizeof(char) * 65);
+	if (!ptr)
+		return (NULL);
+	ptr = &ptr[64];
 	*ptr = '\0';
 	if (base < 2 || base > 16)
 		return (0);
@@ -27,10 +29,7 @@ static char	*ft_itoa_base(int nbr, int base)
 	if (num < 0)
 		num *= -1;
 	if (num == 0)
-	{
 		*(--ptr) = rep[num % base];
-		return (ptr);
-	}
 	while (num != 0)
 	{
 		*--ptr = rep[num % base];
