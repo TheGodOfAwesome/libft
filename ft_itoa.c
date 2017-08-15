@@ -6,7 +6,7 @@
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/04 10:40:31 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/14 18:40:39 by kmuvezwa         ###   ########.fr       */
+/*   Updated: 2017/08/15 12:59:35 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,11 @@ static int	ft_count_int_len(int num, int base)
 	int		i;
 
 	i = 0;
-	if (num < 0)
+	if (num < 0 && base == 10)
+	{
+		num = num * -1;
 		i++;
+	}
 	while(num != 0)
 	{
 		num = num / base;
@@ -59,10 +62,18 @@ char		*ft_itoa(int nbr)
 {
 	char	*str;
 
-	if (nbr == -214783648)
-		return (ft_strdup("-214783648"));
+	if (nbr == -2147483648)
+	{
+		str = (char *)malloc(sizeof(char) * 12);
+		if (!str)
+			return (NULL);
+		str = ft_strdup("-2147483648");
+		return (str);
+	}
 	else if (nbr == 214783647)
-		return (ft_strdup("-214783648"));
+		return (ft_strdup("214783648"));
+	else if (nbr == 0)
+		return (ft_strdup("0"));
 	str = ft_itoa_base(nbr, 10);
 	return (str);
 }
