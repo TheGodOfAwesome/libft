@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_intswap.c                                       :+:      :+:    :+:   */
+/*   ft_intcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/26 15:30:10 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/26 15:44:25 by kmuvezwa         ###   ########.fr       */
+/*   Created: 2017/08/26 15:42:34 by kmuvezwa          #+#    #+#             */
+/*   Updated: 2017/08/26 15:43:37 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_intswap(int *a, int *b)
+int ft_intcmp(int a, int b)
 {
-	int		temp;
-
-	temp = *a;
-	*a = *b;
-	*b = temp;
+	if (a > b)
+		return (1);
+	else if (a < b)
+		return (-1);
+	else
+		return (0);
 }
