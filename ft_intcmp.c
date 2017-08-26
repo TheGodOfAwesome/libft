@@ -6,13 +6,13 @@
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/08/26 15:42:34 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/26 15:43:37 by kmuvezwa         ###   ########.fr       */
+/*   Updated: 2017/08/26 15:59:32 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_intcmp(int a, int b)
+int		ft_intcmp(int a, int b)
 {
 	if (a > b)
 		return (1);
