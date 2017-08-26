@@ -6,7 +6,7 @@
 /*   By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/05/10 10:53:29 by kmuvezwa          #+#    #+#             */
-/*   Updated: 2017/08/12 16:07:28 by kmuvezwa         ###   ########.fr       */
+/*   Updated: 2017/08/26 15:35:38 by kmuvezwa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,8 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+void	ft_intswap(int *a, int *b);
+void	ft_swap(char *a, char *b);
 char	*ft_itoa(int n);
 
 #endif

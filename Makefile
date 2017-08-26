@@ -6,7 +6,7 @@
 #    By: kmuvezwa <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/05/10 10:32:31 by kmuvezwa          #+#    #+#              #
-#    Updated: 2017/08/12 15:15:07 by kmuvezwa         ###   ########.fr        #
+#    Updated: 2017/08/26 15:36:11 by kmuvezwa         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,6 +64,8 @@ CFILES = ft_memset.c\
 		 ft_strsplit.c\
 		 ft_strsub.c\
 		 ft_strjoin.c\
+		 ft_swap.c\
+		 ft_intswap.c\
 		 ft_itoa.c\
 		 ft_atoi.c
 
@@ -117,6 +119,8 @@ OBJS = ft_memset.o\
 	  ft_strmapi.o\
 	  ft_strsub.o\
 	  ft_strjoin.o\
+	  ft_swap.o\
+	  ft_intswap.o\
 	  ft_itoa.o\
 	  ft_atoi.o
 
